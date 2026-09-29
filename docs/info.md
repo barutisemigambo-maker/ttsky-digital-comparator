@@ -9,11 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This is an 8-bit combinational comparator. It compares A on `ui_in` with B on `uio_in`. `uo_out[0]` is high when A is greater than B, `uo_out[1]` when they are equal, and `uo_out[2]` when A is less than B. The remaining `uo_out` bits are low; the bidirectional pins and control signals are unused.
 
 ## How to test
 
-Explain how to use your project
+From the `test` directory, run `make clean` followed by `make` to run the cocotb tests with Icarus Verilog. The tests check greater-than, equality, less-than, and comparisons involving 0 and 255.
 
 ## External hardware
 
